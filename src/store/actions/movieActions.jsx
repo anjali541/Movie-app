@@ -1,10 +1,9 @@
-import { removemovie } from "../reducers/movieslice";
-import { loadmovie} from "../reducers/movieslice";
+import { removemovie ,loadmovie} from "../reducers/movieslice";
 import axios from "../../utils/axios";
 
 export const asyncloadmovie = (id) => async (dispatch,getState) =>{
     try{
-        const detail = await axios.get(`/movie/${id}`);
+        const detail    = await axios.get(`/movie/${id}`);
         const externalid = await axios.get(`movie/${id}/external_ids`);
         // const recommendations = await axios.get(`movie/${id}/recommendation`);
         const similar = await axios.get(`/movie/${id}/similar`);
