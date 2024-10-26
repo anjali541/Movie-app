@@ -15,7 +15,6 @@ export const personSlice = createSlice({
      removeperson:(state,action) =>{
         state.info = null;
      }
-     
     },
   })
   
