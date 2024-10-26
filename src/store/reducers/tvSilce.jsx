@@ -13,13 +13,13 @@ export const tvSlice = createSlice({
         state.info = action.payload;
      },
      removetv:(state,action) =>{
-        state.info = action.null;
+        state.info = null;
      }
      
     },
   })
   
   // Action creators are generated for each case reducer function
-  export const { loadtv,removetv} = tvSlice.actions
+  export const { loadtv,removetv} = tvSlice.actions;
   
   export default tvSlice.reducer
