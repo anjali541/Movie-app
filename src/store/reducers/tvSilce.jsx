@@ -3,10 +3,10 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   info: null
-}
+};
 
 export const tvSlice = createSlice({
-    name: 'tv',
+    name: "tv",
     initialState,
     reducers: {
      loadtv:(state,action) =>{
@@ -14,12 +14,12 @@ export const tvSlice = createSlice({
      },
      removetv:(state,action) =>{
         state.info = null;
-     }
+     },
      
     },
-  })
+  });
   
   // Action creators are generated for each case reducer function
   export const { loadtv,removetv} = tvSlice.actions;
   
-  export default tvSlice.reducer
+  export default tvSlice.reducer;
